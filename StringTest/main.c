@@ -17,15 +17,16 @@ int main()
 	printf("이번과일 : %s\n", fruit);
 	printf("%s\n", fruit);*/
 
-	/*int age;
+	int age;
 	double height;
 
 	printf("나이와 키를 입력하세요 : ");
 	scanf("%d%lf", &age, &height);
-	printf("나이 : %d, 키 : %.1lfcm입니다.\n", age, height);*/
+	printf("나이 : %d, 키 : %.1lfcm입니다.\n", age, height);
 
 	int grade;
 	double name[20];
+	getchar();
 
 	printf("학점을 입력하세요 : ");
 	scanf("%c", &grade);
