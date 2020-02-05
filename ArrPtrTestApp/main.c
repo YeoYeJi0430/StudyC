@@ -42,7 +42,7 @@ int main(void)
         printf("%5d", pa[i]);
     }*/
 
-    int ary[3] = { 10,20,30 };
+    /*int ary[3] = { 10,20,30 };
     int* pa = ary;
 
     printf("¹è¿­ÀÇ °ª :");
@@ -51,7 +51,7 @@ int main(void)
         printf("%d\t", pa[i]); //*(pa+i)
         //printf("%5d", *pa);
         //pa++;
-    } //pa+i ¶û pa++ ´Ù¸§
+    } //pa+i ¶û pa++ ´Ù¸§*/
 
     int ary[5] = { 10,20,30,40,50 };
     int* pa = ary;
