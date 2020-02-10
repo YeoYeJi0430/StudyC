@@ -102,7 +102,7 @@ int main(void)
     printf("\n");
     fclose(fp);*/
 
-    FILE* fp;
+    /*FILE* fp;
     char str[20];
     
     fp = fopen("d.txt", "a+");
@@ -138,7 +138,38 @@ int main(void)
             fprintf(fp, "%s\n", str);
         }
     }
-    fclose(fp);
+    fclose(fp);*/
+
+    FILE* afp, * bfp;
+    int num = 213456;
+    int res;
+
+    afp = fopen("a.txt", "wt");
+    if (afp == NULL)
+    {
+        return EXIT_FAILURE;
+    }
+    fprintf(afp, "%d", num);
+
+    bfp = fopen("b.txt", "wb");
+    if (bfp == NULL)
+    {
+        return EXIT_FAILURE;
+    }
+    fwrite(&num, sizeof(num), 1, bfp);
+
+    fclose(afp);
+    fclose(bfp);
+
+    bfp = fopen("b.txt", "rb");
+    if (bfp == NULL)
+    {
+        return EXIT_FAILURE;
+    }
+    fread(&res, sizeof(res), 1, bfp);
+    printf("%d\n", res);
+
+    fclose(bfp);
 
 	system("pause");
 	return EXIT_SUCCESS;
