@@ -127,7 +127,30 @@ int main(void)
 
     printf("head->num : %d\n", head->num);
     printf("head->next->num : %d\n", head->next->num);
+    printf("head->num : %p\n", head->next);
+    printf("a.next : %p\n", a.next);
+    printf("b address : %p\n", &b);
+
+    printf("List all : ");
+    current = head;
+    while (current != NULL)
+    {
+        printf("%d  ", current->num);
+        current = current->next;
+    }
+    printf("\n");
+
+    printf("b delete : ");
+    a.next = &c;
+    b.next = 0;
+    current = head;
+    while (current != NULL)
+    {
+        printf("%d  ", current->num);
+        current = current->next;
+    }
+    printf("\n");
 
     system("pause");
     return EXIT_SUCCESS;
-}
+} //LinkedListApp, 연결리스트
