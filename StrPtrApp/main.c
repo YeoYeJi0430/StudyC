@@ -111,6 +111,7 @@ int main(void)
     return EXIT_SUCCESS;
 }p491-2*/
 
+
 struct list
 {
     int num;
