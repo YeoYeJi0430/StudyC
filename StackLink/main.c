@@ -12,7 +12,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-typedef int element;
+/*typedef int element;
 
 typedef struct stackNode
 {
@@ -104,4 +104,59 @@ int main(void)
 
 	system("pause");
 	return EXIT_SUCCESS;
+}*/
+
+
+/*
+typedef int Item;
+
+
+typedef struct Node
+{
+    Item item;
+    Node* next;
+}Node;
+
+typedef struct List
+{
+    Node* top;
+    Node* head;
+}List;
+
+typedef struct Stack
+{
+    List* list;
+}Stack;
+
+void InitStack(Stack* Stack);
+//bool IsEmpty(const Stack* stack);
+void Push(Stack* stack, Item item);
+Node* CreateNode(Item item);
+void ReleaseNode(Node* node);
+
+bool IsEmpty(const Stack* Stack)
+{
+    return Stack->head == NULL ? true : false;
 }
+
+Node* CreateNode(Item item)
+{
+    Node* node = (Node*)malloc(sizeof(Node));
+    node->item = item;
+    node->next = NULL;
+    return node;
+}
+
+void ReleaseNode(Node* node)
+{
+    free(node);
+}
+
+
+int main(void)
+{
+    //here.
+    system("pause");
+    return EXIT_SUCCESS;
+}
+*/
